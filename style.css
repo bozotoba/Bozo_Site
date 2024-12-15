@@ -1,0 +1,77 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: #ffff;
+}
+
+/* Cabeçalho */
+header .banner {
+  background: url('https://media.discordapp.net/attachments/960967808089460746/1317642121985130526/1500x500.png?ex=675f6d5a&is=675e1bda&hm=7aefd549bd89a701e636c9ddaf69d0d35056a12d3e6ba9b19e1681983924fd01&=&format=webp&quality=lossless&width=1200&height=400') no-repeat center/cover;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #a854f7;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #7b09e5;
+}
+
+/* Seções */
+section {
+  margin: 30px;
+}
+
+section h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #7b09e5;
+}
+
+.filmes {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.filmes img {
+  border-radius: 5px;
+  width: 150px;
+  height: 220px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.filmes img:hover {
+  transform: scale(1.1);
+}
